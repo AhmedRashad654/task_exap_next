@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  direction: rtl;
+  overflow-x: hidden;
+}
+.activeSidebar {
+  @apply bg-gray-200 rounded-md  hover:text-green-700 hover:bg-gray-100 text-green-600;
+}
+.activeSidebarMenu {
+  @apply bg-gray-200  duration-150 transition-all;
+}
+.font-sidebar {
+  font-weight: 650;
+}
+.routate {
+  animation: routateSetting 2.2s linear infinite;
+}
+@keyframes routateSetting {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
