@@ -12,7 +12,7 @@ export default function BlockNumber({ title, number, percentage, color }) {
       : ""
   );
   return (
-    <div className="rounded-lg border shadow-md p-5 flex items-center gap-3 h-fit ">
+    <div className="rounded-lg border shadow-md p-5 flex items-center justify-between gap-3 h-fit ">
       <div className="flex flex-col gap-1">
         <div className="w-full  font-bold text-[1.1rem] text-gray-800">
           {title}
